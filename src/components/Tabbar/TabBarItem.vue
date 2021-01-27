@@ -58,6 +58,7 @@
     text-align: center;
     font-size: 12px;
     margin-top: 4px;
+    cursor: pointer;
     // line-height: 49px;
     // text-align: center;
     // visibility: hidden;

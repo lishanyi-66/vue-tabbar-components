@@ -1,50 +1,18 @@
 <template>
   <div>
     <router-view></router-view>
-    <tab-bar>
-      <tab-bar-item  path='/home' activeColor="pink">
-        <div slot="item-icon">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-1"></use>
-            </svg>
-        </div>
-        <div slot="item-name">首页</div>
-      </tab-bar-item>
-      <tab-bar-item path='/category'  activeColor="pink">
-        <div slot="item-icon">
-            <svg class="icon" aria-hidden="true" >
-                <use xlink:href="#icon-fenlei"></use>
-            </svg>
-        </div>
-        <div slot="item-name">分类</div>
-      </tab-bar-item>
-      <tab-bar-item  path='/cart' activeColor="pink">
-        <div slot="item-icon">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-icon01"></use>
-            </svg>
-        </div>
-        <div slot="item-name">购物车</div>
-      </tab-bar-item>
-      <tab-bar-item path='/profile' activeColor="pink">
-        <div slot="item-icon">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-wode"></use>
-            </svg>
-        </div>
-        <div slot="item-name">我的</div>
-      </tab-bar-item>
-    </tab-bar>
+   <main-tar-bar></main-tar-bar>
   </div>
 </template>
 
 <script>
-import TabBar from './components/Tabbar/TabBar.vue';
-import TabBarItem from './components/Tabbar/TabBarItem.vue';
-import './assets/icon/icon.js'
+import MainTarBar from './components/Tabbar/MainTarBar.vue';
+
+
 
   export default {
-  components: { TabBar, TabBarItem },
+  components: { MainTarBar },
+  
   data() {
     return {
 
